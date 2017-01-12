@@ -23,14 +23,23 @@ h1, h2, h3 {
 
 .navbar, .home-callout {
   //Gradient provided by @_ighosh at UIGradients.com
-  background: #00bf8f; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #00bf8f , #001510); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #00bf8f , #001510); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #B51217; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #B51217 , #464849); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #B51217 , #464849); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .navbar {
   border: none;
   border-radius: 0;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: white;
+  opacity: 0.75;
 }
 
 .home-callout {
