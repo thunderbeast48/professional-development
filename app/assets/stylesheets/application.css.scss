@@ -16,18 +16,23 @@
  
  @import 'bootstrap-sprockets';
  @import 'bootstrap';
+ @import 'font-awesome-sprockets';
+ @import 'font-awesome';
 
+// Typography styles from Google Fonts
 h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
 }
 
+//Gradient specifications
 .navbar, .home-callout {
   //Gradient provided by @_ighosh at UIGradients.com
-  background: #B51217; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #B51217 , #464849); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #B51217 , #464849); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #c21500; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #c21500 , #ffc500); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #c21500 , #ffc500); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+// Navbar styles
 .navbar {
   border: none;
   border-radius: 0;
@@ -35,13 +40,13 @@ h1, h2, h3 {
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
   color: white;
+  &:hover {
+    color: white;
+    opacity: 0.75;
+  }
 }
 
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: white;
-  opacity: 0.75;
-}
-
+// Home page, home-callout 
 .home-callout {
   color: white;
   margin-top: -20px;
